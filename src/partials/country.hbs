@@ -1,0 +1,15 @@
+<div class='country-box'>
+  <h1>{{name.common}}</h1>
+  <div class='sec-box'>
+    <ul class='country-info'>
+      <li class='country-des'>Capital: {{capital}}</li>
+      <li class='country-des'>Population: {{population}}</li>
+      <ul class='country-des'>Languages: 
+        {{#each languages}}
+          <li class='language-item'>{{this}}</li>
+        {{/each}}
+      </ul>
+    </ul>
+    <img src={{flags.png}} />
+  </div>
+</div>
